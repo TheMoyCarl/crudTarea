@@ -29,7 +29,7 @@ def actualizar():
 @app.delete('/borrar')
 def borrar():
     if productos:
-        productos.pop(0)
+        productos.pop()
         return "Producto eliminado"
     return "No hay productos para eliminar"
 
